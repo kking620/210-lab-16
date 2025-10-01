@@ -17,6 +17,11 @@ class Color
 
     //declaring the public elements of the class with setters and getters to declare each value
     public:
+        Color() {Red = 100, Blue = 100, Green = 100;}
+        Color(int r) {Red = r, Blue = 100, Green = 100;}
+        Color(int r, int b) {Red = r, Blue = b, Green = 100;}
+        Color(int r, int b, int g) {Red = r, Blue = b, Green = g;}    
+
         int getRed() {return Red;}
         void setRed(int r) {Red = r;}
         int getBlue() {return Blue;}
@@ -48,23 +53,33 @@ int main()
 
     cout << "Color #2\n";
     //declaring the second color class object
-    Color color2;
+    Color color2(150);
     //calling the class functions for the class object using the dot operator to set the values of the colors
     //and printing out the appropriate values
-    color2.setRed(203);
+    color2.getRed();
     color2.setBlue(43);
     color2.setGreen(12);
     color2.print();
 
     cout << "Color #3\n";
     //declaring the second color class object
-    Color color3;
+    Color color3(6, 35);
     //calling the class functions for the class object using the dot operator to set the values of the colors
     //and printing out the appropriate values
-    color3.setRed(6);
-    color3.setBlue(35);
+    color3.getRed();
+    color3.getBlue();
     color3.setGreen(204);
     color3.print();
+
+    cout << "Color #4\n";
+    //declaring the second color class object
+    Color color4(187, 14, 103);
+    //calling the class functions for the class object using the dot operator to set the values of the colors
+    //and printing out the appropriate values
+    color4.getRed();
+    color4.getBlue();
+    color4.getGreen();
+    color4.print();
 
     return 0;
 }
