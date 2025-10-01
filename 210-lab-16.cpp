@@ -17,30 +17,12 @@ class Color
 
     //declaring the public elements of the class with setters and getters to declare each value
     public:
-        int getRed()
-        {
-            return Red;
-        }
-        void setRed(int r)
-        {
-            Red = r;
-        }
-        int getBlue()
-        {
-            return Blue;
-        }
-        void setBlue(int b)
-        {
-            Blue = b;
-        }
-        int getGreen()
-        {
-            return Green;
-        }
-        void setGreen(int g)
-        {
-            Green = g;
-        }
+        int getRed() {return Red;}
+        void setRed(int r) {Red = r;}
+        int getBlue() {return Blue;}
+        void setBlue(int b) {Blue = b;}
+        int getGreen() {return Green;}
+        void setGreen(int g) {Green = g;}
 
         //an in class print function that can be called to display the values of the colors from within the class
         void print()
